@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+.clear {
+    clear: both;
+}
+
+
+header {
+    background-color: #0b3545;
+    padding: 15px 0;
+}
+header .logo {
+    width: 30%;
+    float: left;
+}
+header .logo img {
+    max-width: 100%;
+}
+header .links {
+    float: right;
+    width: 70%;
+}
+header .links ul {
+    text-align: right;
+    padding: 15px 0;
+}
+header .links ul li {
+    display: inline-block;
+    list-style: none;
+}
+header .links ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+    color: #ffff;
+}
+header .mobile-btn {
+    float: right;
+    display: none;
+    margin-top: 20px;
+}
+header .mobile-btn .line {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: #ffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+nav {
+    height: 530px;
+    background-image: url(../imgs/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav .welcome-msg {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffff;
+    text-align: center;
+}
+nav .welcome-msg h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+nav .welcome-msg p {
+    font-size: 20px;
+}
+
+
+/* ---------------a group of partici --------------*/
+main .we-do,
+main .our-projects,
+main .you-get,
+main .customers {
+    padding: 50px 0;
+}
+
+main .we-do .box,
+main .our-projects .project,
+main .you-get .get-box {
+    float: left;
+    width: 32.3333%;
+    margin: 10px 0.5%;
+}
+main img {
+    max-width: 100%;
+}
+main h2 {
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+main .we-do h3,
+main .our-projects h3,
+main .you-get h3 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+main .our-projects p,
+main .you-get p,
+main .customers p {
+    line-height: 1.25;
+    font-size: 16px;
+}
+
+main .our-projects h2,
+main .customers h2 {
+    text-align: center;
+}
+
+/* -------------------------sectoin we do---------------- */
+
+main .we-do {
+    text-align: center;
+    color: #0b3545;
+}
+main .we-do .box svg {
+    color: coral;
+    font-size: 40px;
+}
+main .we-do .box p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* -------------------------sectoin our projects---------------- */
+
+main .our-projects {
+    background-color: rgb(244 244 244);
+    color: rgb(31 190 165);
+}
+main .our-projects .project {
+    padding: 0 10px;
+}
+main .our-projects .project p {
+    color: #0b3545;
+}
+
+/* -------------------------sectoin you get---------------- */
+
+main .you-get {
+    background-image: url(../imgs/background1.jpg);
+    text-align: center;
+    color: #ffff;
+}
+main .you-get .get-box {
+    padding: 0 10px;
+}
+main .you-get .get-box .get-icon {
+    background-color: #ffff;
+    color: #f49962;
+    padding: 16px;
+    max-width: 30%;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* -------------------------sectoin customers---------------- */
+
+main .customers {
+    color: #0b3545;
+}
+main .customers .customers-box {
+    float: left;
+    width: 22%;
+    margin: 0px 1.5%;
+}
+main .customers .customers-box h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+main .customers .customers-box h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/* --------------------------footer----------------------------- */
+footer {
+    background-color: #0b3545;
+    padding: 60px 0;
+}
+footer .footer-boxes {
+    float: left;
+    width: 23%;
+    margin: 1%;
+}
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #f49962;
+}
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+footer p,
+footer li,
+footer .box-3 a {
+    color: #ffff;
+}
+footer .box-3 ul {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+footer a{
+    text-decoration: none;
+}
+footer .box-4 .sc-media a{
+    display: inline-block;
+    background-color: #f49962;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #0b3545;
+    margin: 30px 8px 0 0;
+}
+
+
+
+
+
+
+
+/* ---------------------------------responsive media qu */
+
+@media(max-width:1200px) {
+    nav .welcome-msg h1 {
+        font-size: 60px;
+    }
+    nav .welcome-msg p {
+        font-size: 18px;
+    }
+    main .we-do .box,
+    main .our-projects .project,
+    main .you-get .get-box {
+        padding: 0 5px;
+    }
+    main h2 {
+        margin: 25px 0;
+        font-size: 25px;
+    }
+    main .we-do h3,
+    main .our-projects h3,
+    main .you-get h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    main .our-projects p,
+    main .you-get p,
+    main .customers p {
+        font-size: 15px;
+    }
+    main .customers .customers-box h4 {
+        margin-top: 5px;
+    }
+    main .customers .customers-box h3 {
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    footer h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+@media(max-width:992px) {
+    header .links {
+        display: none;
+    }
+    header .mobile-btn {
+        display: block;
+    }
+    nav .welcome-msg h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    main .we-do .box, 
+    main .our-projects .project, 
+    main .you-get .get-box,
+    main .customers .customers-box,
+    footer .footer-boxes {
+        width: 46%;
+        margin: 10px 2%;
+    }
+    main .you-get .get-box .get-icon {
+        padding: 10px;
+        font-size: 20px;
+    }
+    main .customers .customers-box {
+        height: 450px;
+    }
+    main .customers .customers-box h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media(max-width:768px) {
+    .container {
+        width: 80%;
+    }
+    footer .footer-boxes {
+        height: 200px;
+    }  
+}
+
+
+
+@media(max-width:576px) {
+    .container {
+        width: 60%;
+    }
+    header .mobile-btn {
+        margin-top: 10px;
+    }
+    header .mobile-btn .line {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 3px;
+    }
+    nav .welcome-msg h1 {
+        font-size: 30px;
+    }
+    main .we-do .box, 
+    main .our-projects .project, 
+    main .you-get .get-box,
+    main .customers .customers-box,
+    footer .footer-boxes {
+        width: 100%;
+        margin: 30px 0 0;
+    }
+    main .you-get .get-box .get-icon {
+        padding: 20px;
+        font-size: 20px;
+    }
+    footer .footer-boxes {
+        height: auto;
+    }
+}
